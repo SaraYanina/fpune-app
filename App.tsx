@@ -69,16 +69,22 @@ const App = () => {
           <Stack.Screen name="Props02" component={Props02} />
           <Stack.Screen name="Axios03" component={Axios03} />
           <Stack.Screen name="AsyncStorage04" component={AsyncStorage04} />
-     */}
-     <NavigationContainer>
-       <Stack.Navigator initialRouteName="ComponenteParcial01">
+
+
+        <Stack.Navigator initialRouteName="ComponenteParcial01">
        <Stack.Screen name="ComponenteParcial01" component={ComponenteParcial01} />
        <Stack.Screen name="PropsParcial02" component={PropsParcial02} />
        <Stack.Screen name="AxiosParcial03" component={AxiosParcial03} />
        <Stack.Screen name="AsyncStorageParcial04" component={AsyncStorageParcial04} />
-
-
+     */}
+     <NavigationContainer>
+          <Stack.Navigator initialRouteName="Componente01">
+          <Stack.Screen name= "Componente01" component={Componente01}/>
+          <Stack.Screen name="Props02" component={Props02} />
+          <Stack.Screen name="Axios03" component={Axios03} />
+          <Stack.Screen name="AsyncStorage04" component={AsyncStorage04} />
        </Stack.Navigator>
+
      </NavigationContainer>
      
 
