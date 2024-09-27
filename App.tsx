@@ -28,13 +28,14 @@ import PropsEjemplo from "./src/navegacion/PropsEjemplo";
 import AxiosEjemplo from "./src/navegacion/AxiosEjemplo";
 import AsyncStorageEjemplo from "./src/navegacion/AsyncStorageEjemplo";
 
-import Componente01 from "./src/simulacro-parcial/Componente01";
-import Axios03 from "./src/simulacro-parcial/Axios03";
-import Props02 from "./src/simulacro-parcial/Props02";
-import AsyncStorage04 from "./src/simulacro-parcial/AsyncStorage04";
-
-
-
+//import Componente01 from "./src/simulacro-parcial/Componente01";
+//import Axios03 from "./src/simulacro-parcial/Axios03";
+//import Props02 from "./src/simulacro-parcial/Props02";
+//import AsyncStorage04 from "./src/simulacro-parcial/AsyncStorage04";
+ import ComponenteParcial from "./src/primera-parcial/ComponenteParcial";
+ import AxiosParcial from "./src/primera-parcial/Axios";
+ import PropsParcial from "./src/primera-parcial/PropsParcial";
+ import TareasAsyncStorage from "./src/primera-parcial/TareasAsyncStorage";
 
 const Stack = createNativeStackNavigator();
 
@@ -70,11 +71,11 @@ const App = () => {
 
      */}
      <NavigationContainer>
-          <Stack.Navigator initialRouteName="Componente01">
-          <Stack.Screen name= "Componente01" component={Componente01}/>
-          <Stack.Screen name="Props02" component={Props02} />
-          <Stack.Screen name="Axios03" component={Axios03} />
-          <Stack.Screen name="AsyncStorage04" component={AsyncStorage04} />
+          <Stack.Navigator initialRouteName="ComponenteParcial">
+          <Stack.Screen name= "ComponenteParcial" component={ComponenteParcial}/>
+          <Stack.Screen name="PropsParcial" component={PropsParcial} />
+          <Stack.Screen name="AxiosParcial" component={AxiosParcial} />
+          <Stack.Screen name="TareasAsyncStorage" component={TareasAsyncStorage} />
        </Stack.Navigator>
 
      </NavigationContainer>
